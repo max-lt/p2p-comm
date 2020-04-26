@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "noLib": false,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "target": "es2017",
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "rootDirs": ["."],
+    "paths": {
+      "@p2p-comm/*": ["./modules/*/src"],
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

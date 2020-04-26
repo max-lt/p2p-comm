@@ -1,0 +1,31 @@
+{
+  "name": "p2p-comm",
+  "version": "1.0.6",
+  "description": "",
+  "main": "src/",
+  "scripts": {
+    "check": "npx tsc --noEmit",
+    "build": "npx tsc",
+    "dev": "DEBUG=p2p-comm* ts-node-dev -r tsconfig-paths/register --ignore-watch node_modules --notify=false src/dev.ts",
+    "start": "node dist/dev",
+    "clean": "git clean -fX"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.17.21",
+    "@types/supertest": "^2.0.5",
+    "@types/uuid": "^3.4.4",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0",
+    "ts-node-dev": "^1.0.0-pre.30",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  }
+}
